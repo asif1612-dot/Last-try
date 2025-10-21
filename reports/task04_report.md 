@@ -1,0 +1,42 @@
+# Task 4 — Geometrical & Fuzzy Probability
+
+## Inputs
+- NDVI: ndvi_s2_2024_growing_season.tif
+
+## Parameters
+- Grid ~ 250 m cells (computed from raster resolution)
+- Crisp threshold t = 0.50
+- Fuzzy μ_veg: 0 at 0.20, 1 at 0.70 (linear in-between)
+
+## Findings — Geometrical Probability
+- Mean cell P(NDVI ≥ t): ____
+- Spatial pattern: (where are highest/lowest cells?)
+- Sensitivity to t (if tested): ____
+
+## Findings — Fuzzy Membership
+- Mean μ_veg: ____
+- Areas with gradual transitions: ____
+- What μ captured that crisp missed: ____
+
+## Contrast: Crisp vs Fuzzy
+- When crisp is preferable: (e.g., hard decisions, masks)
+- When fuzzy helps: (gradual transitions, mixed land cover)
+- Recommendation for this ROI: ____
+
+## Next steps
+- Try different cell sizes (e.g., 150 m / 500 m).
+- Adjust fuzzy breakpoints (a,b) based on phenology/land cover.
+
+Contrast crisp vs fuzzy for this ROI:
+
+Where did crisp P(NDVI ≥ t) give confident “vegetated vs not” decisions?
+Where did μ_veg expose gradual transitions or mixed pixels?
+When is fuzziness helpful?
+Discuss ecotones, mixed land cover, sensor noise, edges, or seasonal transitions.
+
+Parameter sensitivity:
+How would results change if t = 0.4 or 0.6? If (A,B) = (0.15, 0.65) vs (0.25, 0.75)?
+
+Actionable note:
+For mapping/monitoring in this ROI, would you recommend crisp masks, fuzzy scores, or both
+(e.g., fuzzy for analysis, crisp for deployment)?

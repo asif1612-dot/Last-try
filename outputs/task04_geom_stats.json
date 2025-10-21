@@ -1,0 +1,13 @@
+{
+  "cell_size_target_m": 250,
+  "pixel_size_m_x": 9.146886601355533,
+  "pixel_size_m_y": 10.000045742818513,
+  "approx_cell_w_px": 27,
+  "approx_cell_h_px": 25,
+  "mean_cell_prob": 0.3237037037037037,
+  "median_cell_prob": 0.33925925925925926,
+  "min_cell_prob": 0.05037037037037037,
+  "max_cell_prob": 0.5185185185185185,
+  "threshold_t": 0.5,
+  "lat_center_deg": 23.8390418523218
+}
